@@ -45,7 +45,7 @@ for (let i = 0; i < eliminar.length; i++) {
 //2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. 
 //Recuerda que no solo puedes insertar elementos con .appendChild.
 const voyMedio = document.createElement('p')
-document.body.insertBefore(voyMedio, newDiv2);
+document.body.insertBefore(voyMedio, document.querySelectorAll('div.fn-insert-here')[1]);
 voyMedio.innerText='Voy en medio!';
 
 //2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
